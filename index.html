@@ -18,8 +18,18 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+      <h2>About Me</h2>
+      <p class="about-description">
+        I am a passionate web developer with experience in creating dynamic and
+        responsive websites. My skills include HTML, CSS, JavaScript, and
+        various frameworks. I love solving problems and continuously learning
+        new technologies to enhance my development skills.
+      </p>
+    </section>
     <!-- SKILLS SECTION -->
-    <div class="skills-section" id="skills">
+    <section class="skills-section" id="skills">
       <h2>My Skills</h2>
       <div class="skills-container">
         <div class="skill">HTML</div>
@@ -31,16 +41,16 @@
         <div class="skill">Hygraph</div>
         <div class="skill">MySQL</div>
         <div class="skill">Next.js</div>
-        <div class="skill">Auth0</div>
-        <div class="skill">Vercel</div>
-        <div class="skill">Docker</div>
-
         <div class="skill">MUI</div>
         <div class="skill">Tailwindcss</div>
         <div class="skill">Git</div>
+        <div class="skill">Vercel</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Auth0</div>
+
         <div class="skill">API Development</div>
       </div>
-    </div>
+    </section>
     <!-- PROJECT SECTION -->
     <section class="project-section" id="projects">
       <h2>My Projects</h2>
@@ -75,5 +85,29 @@
         </div>
       </div>
     </section>
+    <!-- CONTACT SECTION -->
+    <section class="container">
+      <div class="form-section">
+          <h2>Contact Us</h2>
+          <form id="contactForm">
+              <input type="text" id="name" placeholder="Your Name" required>
+              <input type="email" id="email" placeholder="Your Email" required>
+              <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+              <button type="submit">Send</button>
+          </form>
+          <div id="responseMessage" style="display:none; margin-top: 15px;"></div>
+      </div>
+      <div class="details-section">
+          <h2>Contact Details</h2>
+          <p>Email: example@example.com</p>
+          <p>Phone: +123456789</p>
+          <h3>Follow Us</h3>
+          <ul class="social-links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+          </ul>
+      </div>
+  </section>
   </body>
 </html>
