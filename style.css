@@ -238,6 +238,8 @@ button:hover {
   transform: translateY(-5px);
 }
 .social-links {
+  display: flex;
+  gap: 10px;
   list-style: none;
   padding: 0;
 }
@@ -247,6 +249,12 @@ button:hover {
 .social-links a {
   text-decoration: none;
   color: #f1c40f;
+  font-size: 30px;
+}
+
+.social-links a i:hover {
+  transition: transform 0.3s;
+  transform: translateY(-5px);
 }
 @media (max-width: 768px) {
   .container {
