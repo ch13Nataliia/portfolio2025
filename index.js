@@ -1,3 +1,5 @@
+// EMAIL FUNCTIONALITY
+
 function sendMail() {
   var params = {
     name: document.getElementById('name').value,
@@ -19,3 +21,12 @@ function sendMail() {
     })
     .catch((err) => console.log(err));
 }
+
+// CLOSE/OPEN MENU
+const navToggle = document.querySelector(".nav-toggle");
+const links = document.querySelector(".links");
+
+navToggle.addEventListener("click", function () {
+
+  links.classList.toggle("show-links");
+});
