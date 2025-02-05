@@ -6,6 +6,8 @@ body {
 }
 
 /* NAVBAR */
+
+
 nav {
   background-color: #2c3e50;
 }
@@ -28,8 +30,10 @@ nav {
 }
 .logo {
   height: 30px;
-  color: #f1c40f;
+  color: #d35400;
   font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
 }
 
 .links {
@@ -85,69 +89,6 @@ nav {
   }
 }
 
-/* header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #2c3e50;
-  color: #f39c12;
-  padding: 20px 20px;
-  font-size: 25px;
-}
-.nav-links {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.nav-links li {
-  margin: 0 15px;
-}
-.nav-links a {
-  color: #f1c40f;
-  text-decoration: none;
-  padding: 14px 20px;
-  font-size: 20px;
-  font-weight: bold;
-
-  text-decoration: none;
-  transition: color 0.3s;
-}
-.nav-links a:hover {
-  color: #007bff;
-}
-.toggle-btn {
-  display: none;
-  background-color: #16a085;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: #16a085;
-    padding: 10px;
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  .toggle-btn {
-    display: block;
-  }
-}
-.content {
-  padding: 20px;
-} */
-
 /* ABOUT SECTION */
 
 .about-section {
@@ -162,13 +103,15 @@ nav {
 .about-section h2 {
   margin-bottom: 20px;
   color: #f1c40f;
+  letter-spacing: 0.1rem;
 }
 
 .about-description {
   max-width: 600px;
   margin-bottom: 30px;
-  font-size: 18px;
+  font-size: 20px;
   color: #f1c40f;
+  letter-spacing: 0.1rem;
 }
 .cv-button {
   margin-top: 20px;
@@ -276,6 +219,13 @@ nav {
   color: #666;
 }
 
+
+.project-btns button {
+  margin-bottom: 15px;
+  font-size: 20px;
+  width: 5rem ;
+
+}
 /* CONTACT SECTION */
 .container {
   display: flex;
@@ -321,7 +271,7 @@ button:hover {
 }
 .social-links {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   list-style: none;
   padding: 0;
 }
@@ -330,7 +280,7 @@ button:hover {
 }
 .social-links a {
   text-decoration: none;
-  color: #f1c40f;
+  color: #d35400;
   font-size: 30px;
 }
 
