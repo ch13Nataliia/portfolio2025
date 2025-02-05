@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="index.js"></script>
+
+        <!--LINKS TO SCRIPTS  -->
+         <script defer src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "4lfpUhwPSyn3qFUK6",
+      });
+   })();
+   </script>
+  
   </head>
   <body>
     <!-- NAVBAR -->
@@ -22,11 +33,13 @@
     <section class="about-section" id="about">
       <h2>About Me</h2>
       <p class="about-description">
-        I am a passionate web developer with experience in creating dynamic and
-        responsive websites. My skills include HTML, CSS, JavaScript, and
-        various frameworks. I love solving problems and continuously learning
-        new technologies to enhance my development skills.
+        Hey there! I'm Natali, a web developer who loves building websites that
+        are both gorgeous and super effective. I mix my creative spark with some
+        serious tech skills to bring your vision to life online—creating a
+        digital masterpiece that not only looks amazing but works perfectly too.
+        Let's create something truly unforgettable together!
       </p>
+      <a href="./Nataliia-Tsirul-CV.pdf" class="cv-button" download>Download My CV</a>
     </section>
     <!-- SKILLS SECTION -->
     <section class="skills-section" id="skills">
@@ -47,7 +60,6 @@
         <div class="skill">Vercel</div>
         <div class="skill">Docker</div>
         <div class="skill">Auth0</div>
-
         <div class="skill">API Development</div>
       </div>
     </section>
@@ -87,27 +99,33 @@
     </section>
     <!-- CONTACT SECTION -->
     <section class="container">
-      <div class="form-section">
-          <h2>Contact Us</h2>
-          <form id="contactForm">
-              <input type="text" id="name" placeholder="Your Name" required>
-              <input type="email" id="email" placeholder="Your Email" required>
-              <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-              <button type="submit">Send</button>
-          </form>
-          <div id="responseMessage" style="display:none; margin-top: 15px;"></div>
-      </div>
       <div class="details-section">
-          <h2>Contact Details</h2>
-          <p>Email: example@example.com</p>
-          <p>Phone: +123456789</p>
-          <h3>Follow Us</h3>
-          <ul class="social-links">
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Instagram</a></li>
-          </ul>
+        <h2>Contact Details</h2>
+        <p>Email: tcirulnatalya@gmail.com</p>
+        <p>Phone: +44 7576 524728</p>
+        <h3>Follow Me</h3>
+        <ul class="social-links">
+          <li><a href="https://www.linkedin.com/in/nataliia-tsirul-242079168/">Linkedin</a></li>
+          <li><a href="https://github.com/ch13Nataliia">GitHub</a></li>
+        </ul>
       </div>
-  </section>
+      <div class="form-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <div id="nameError" class="error"></div>
+            
+            <input type="email" id="email" placeholder="Your Email" required>
+            <div id="emailError" class="error"></div>
+            
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <div id="messageError" class="error"></div>
+            
+            <button type="submit" onclick="sendMail()">Send</button>
+        </form>
+        <div id="responseMessage" class="success" style="display:none;"></div>
+    </div>
+      </div>
+    </section>
   </body>
 </html>
